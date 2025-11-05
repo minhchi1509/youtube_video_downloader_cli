@@ -1,0 +1,36 @@
+{
+  "name": "@minhchi1509/ytdl",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "@minhchi1509/ytdl": "dist/index.cjs"
+  },
+  "scripts": {
+    "build": "rm -rf dist && bun esbuild.config.ts",
+    "publish:patch": "npm run build && npm version patch --no-git-tag-version && npm publish --access public",
+    "publish:minor": "npm run build && npm version minor --no-git-tag-version && npm publish --access public",
+    "publish:major": "npm run build && npm version major --no-git-tag-version && npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/inquirer": "^9.0.9",
+    "esbuild": "^0.25.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "inquirer": "^12.10.0"
+  },
+  "keywords": [
+    "youtube_video_downloader_cli",
+    "youtube"
+  ],
+  "author": "minhchi1509",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/minhchi1509/youtube_video_downloader_cli"
+  },
+  "homepage": "https://github.com/minhchi1509/youtube_video_downloader_cli"
+}

@@ -1,0 +1,6 @@
+/node_modules
+/src
+/dist
+esbuild.config.ts
+package.json
+tsconfig.json
