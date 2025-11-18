@@ -12,6 +12,7 @@ async function build() {
     banner: {
       js: "#!/usr/bin/env node",
     },
+    minify: true,
   });
 }
 
