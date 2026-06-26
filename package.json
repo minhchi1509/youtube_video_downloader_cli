@@ -3,25 +3,22 @@
   "version": "1.0.1",
   "type": "module",
   "bin": {
-    "@minhchi1509/ytdl": "dist/index.cjs"
+    "@minhchi1509/ytdl": "dist/main.cjs"
   },
   "scripts": {
-    "build": "rm -rf dist && bun esbuild.config.ts",
-    "publish:patch": "npm run build && npm version patch --no-git-tag-version && npm publish --access public",
-    "publish:minor": "npm run build && npm version minor --no-git-tag-version && npm publish --access public",
-    "publish:major": "npm run build && npm version major --no-git-tag-version && npm publish --access public"
+    "build": "rm -rf dist && tsup"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "@types/inquirer": "^9.0.9",
-    "esbuild": "^0.25.12"
+    "@types/inquirer": "^9.0.10",
+    "@types/node": "^26.0.1",
+    "tsup": "^8.5.1"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "axios": "^1.13.2",
-    "inquirer": "^12.10.0"
+    "axios": "^1.18.1",
+    "inquirer": "^14.0.2"
   },
   "keywords": [
     "youtube_video_downloader_cli",
