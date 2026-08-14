@@ -11,3 +11,9 @@ export const youtubeDownloadPromptHandler = new YtDlPromptHandler(
   downloadService,
   snapAnyApi,
 );
+
+snapAnyApi
+  .getYoutubeVideoFormats("https://www.youtube.com/watch?v=HFk-gbvGCrU")
+  .then((formats) => {
+    console.log("Available formats:", formats);
+  });
