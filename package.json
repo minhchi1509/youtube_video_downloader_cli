@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.10",
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.2.0",
     "tsup": "^8.5.1"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "axios": "^1.18.1",
+    "axios": "^1.19.0",
     "inquirer": "^14.0.2"
   },
   "keywords": [
