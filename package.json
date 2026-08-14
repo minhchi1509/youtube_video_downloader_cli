@@ -1,6 +1,6 @@
 {
   "name": "@minhchi1509/ytdl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "bin": {
     "@minhchi1509/ytdl": "dist/main.cjs"
